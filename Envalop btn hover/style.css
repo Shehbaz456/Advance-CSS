@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Mountains+of+Christmas:wght@700&family=Poppins&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+a{
+    font-size: 18px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #073668;
+    position: relative;
+}
+
+a::before{
+    content: "SHEHBAZ ENVELOPE";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #7a004b;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+a:hover::before{
+    transform: rotateX(0deg);
+}
+
+a::after{
+    content: "SHEHBAZ ENVELOPE";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #086831;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+}
+
+a:hover::after{
+    transform: rotateX(0deg);
+}
+

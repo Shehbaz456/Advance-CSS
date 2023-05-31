@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            /* background: linear-gradient(120deg cyan 55%, #fff 45%); */
+        }
+        html{
+            font: 62.5%;
+        }
+        .parent_div{
+            display: grid;
+            place-items: center;
+            /* background-color: rgb(41, 39, 39); */
+            background: linear-gradient(330deg, #16c9f6 55%, rgb(140, 234, 63) 0%);
+            z-index: -1;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        .child_div{
+            /* background-color: aqua; */
+            text-align: center;
+           
+        }
+        .child_div p{
+            margin: 2.2rem;
+        }
+        .child_div input{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+        }
+        .child_div textarea{
+            width: 68.4rem;
+           height: 7.8rem;
+           border-radius: 1rem;
+           color: royalblue;
+        }
+        ::placeholder{
+            color: royalblue;
+            margin: 10px;
+            padding: 10px;
+        }
+        .btn{
+            /* padding: 10px; */
+            /* margin: 20px; */
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            border-radius: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent_div">
+        <div class="child_div">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias magni corporis minima, </p>
+            <form action="#">
+                <input type="text" placeholder="Enter your name" ><br>
+                <input type="email" placeholder="Enter your Email" ><br>
+                <input type="number" placeholder="Enter your Mobile no " ><br>
+                <textarea  cols="30" rows="10" placeholder="leave your comment"></textarea><br>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

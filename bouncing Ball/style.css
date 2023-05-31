@@ -1,0 +1,81 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;   
+}
+
+ul{
+    display: flex;
+    border-bottom: 15px solid gray;
+    border-radius: 10px;
+    background-color: #4158D0;
+
+
+}
+ 
+ul li{
+   width: 40px;
+   height: 40px;
+   list-style: none;
+   background-color: royalblue;
+   margin: auto 20px;
+   border-radius: 50%;
+   animation: snake-buncing 1s linear infinite alternate-reverse;
+}
+
+@keyframes  snake-buncing {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-159px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+ul li:nth-child(2){
+    animation-delay: 0.2s;
+}
+ul li:nth-child(3){
+    animation-delay: 0.4s;
+}
+ul li:nth-child(4){
+    animation-delay: 0.6s;
+}
+ul li:nth-child(5){
+    animation-delay: 0.8s;
+}
+ul li:nth-child(6){
+    animation-delay: 1s;
+}
+ul li:nth-child(7){
+    animation-delay: 1.2s;
+}
+ul li:nth-child(8){
+    animation-delay: 1.4s;
+}
+ul li:nth-child(9){
+    animation-delay: 1.6s;
+}
+ul li:nth-child(10){
+    animation-delay: 1.8s;
+}
+ul li:nth-child(11){
+    animation-delay: 2s;
+}
+ul li:nth-child(12){
+    animation-delay: 2.2s;
+}
+ul li:nth-child(13){
+    animation-delay: 2.4s;
+}
+ul li:nth-child(14){
+    animation-delay: 2.6s;
+}
